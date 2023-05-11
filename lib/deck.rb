@@ -9,11 +9,9 @@ class Deck
     @cards.length
   end
 
-  def cards_in_category(arg)
+  def cards_in_category(category)
     cards.select do |card|
-      if card.category == arg
-        card
-      end
+      card.category == category
     end
   end
 end
